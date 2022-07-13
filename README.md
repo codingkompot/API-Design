@@ -39,7 +39,7 @@ Table Addresses {
 
 ### Picture of Schema
 
-
+![alt text](https://github.com/codingkompot/API-Design/blob/main/Screenshot_3.png?raw=true)
 
 ## Consider the requests our API should be capable of handling
 
