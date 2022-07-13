@@ -3,7 +3,7 @@
 ## Consider the type of data we will be storing and therefore the type of database we should implement
 
 ### People.csv -
-personId, name, age, houseid
+personid, name, age, houseid
 
 4, “Sally”, 47, 136
 
@@ -20,6 +20,7 @@ Neighbourhoodid, postcode, address
 ## We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
 
 ### Schema for this Database
+
 ```
  Table People {
   personid PK // auto-increment
@@ -54,7 +55,7 @@ POST - for inserting new data
 PUT/PATCH - for updating pre-existing data
 DELETE - delete a record
 
-### List the routes you will need with their HTTP verb and path
+## List the routes you will need with their HTTP verb and path
 
 http://localhost:3000/api/people/:id
 
@@ -75,3 +76,4 @@ http://localhost:3000/api/people/delete/:id
 
 This would be for DELETE requests.
 This would be our endpoint if users wished to withdraw from the app or they were moving away.
+
