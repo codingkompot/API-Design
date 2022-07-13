@@ -24,6 +24,7 @@ Table People {
  age IntegerField
  houseid ForeignKey [ref: > Houses.houseid]
 }
+
 Table Houses {
  houseid PK // auto-increment
  address CharField
@@ -31,6 +32,7 @@ Table Houses {
  ownerid ForeignKey [ref: > People.personid]
  neighbourhoodid ForeignKey [ref: > Addresses.neighbourhoodid]
 }
+
 Table Addresses {
  neighbourhoodid PK // auto-increment
  postcode CharField
@@ -59,3 +61,13 @@ GET
 http://localhost:3000/api/people/new
 
 This would be our URL for our POST requests.
+
+http://localhost:3000/api/people/update/:id
+
+This would be our endpoint for users who wish to update their details.
+This would be for PUT requests.
+
+http://localhost:3000/api/people/delete/:id
+
+This would be for DELETE requests.
+This would be our endpoint if users wished to withdraw from the app or they were moving away.
