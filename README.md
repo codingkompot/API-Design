@@ -19,7 +19,7 @@ Neighbourhoodid, postcode, address
 
 ## Consider the type of data we will be storing and therefore the type of database we should implement (SQL vs NoSQL)
 
-We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
+We would be storing CSV data and we would be using SQL for the purpose of using relational databases.
 
 ## Schema for this Database
 
