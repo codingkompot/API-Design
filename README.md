@@ -17,9 +17,13 @@ Neighbourhoodid, postcode, address
 
 ( 72, “SE11 7GH”, “123 Treehouse Lane” )
 
-## We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
+## Consider the type of data we will be storing and therefore the type of database we should implement (SQL vs NoSQL)
 
-### Schema for this Database
+We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
+
+## Schema for this Database
+
+### Schema Code
 
 ```
  Table People {
