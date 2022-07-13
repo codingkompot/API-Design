@@ -94,7 +94,7 @@ For POST requests, we would receive data in a JSON format and we would convert t
 fetch(url, {
 Method: ‘POST’,
 Headers: {
-‘Content-Type’: ‘application/json’}
+‘Content-Type’: ‘application/json’,
 }
 })
 ```
