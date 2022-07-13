@@ -84,3 +84,17 @@ http://localhost:3000/api/people/delete/:id
 This would be for DELETE requests.
 This would be our endpoint if users wished to withdraw from the app or they were moving away.
 
+## Determine the responses that should be returned and the content types of these requests and responses
+
+For GET requests, we would want something that converts our csv data into JSON data. To this end, we could use the inbuilt fs module in node js to achieve this. As a consequence, our API response would typically include a header with a content-type of application/json.
+
+For POST requests, we would receive data in a JSON format and we would convert that data into a csv format for the purpose of storage in our SQL database.
+
+```
+fetch(url, {
+Method: ‘POST’,
+Headers: {
+‘Content-Type’: ‘application/json’}
+}
+})
+```
