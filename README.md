@@ -17,7 +17,7 @@ Neighbourhoodid, postcode, address
 ## We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
 
 ### Schema for this Database
-
+`
 Table People {
  personid PK // auto-increment
  name CharField
@@ -38,6 +38,7 @@ Table Addresses {
  postcode CharField
  address CharField [ref: > Houses.address]
 }
+`
 
 ### Picture of Schema
 
