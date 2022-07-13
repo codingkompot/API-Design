@@ -20,28 +20,28 @@ Neighbourhoodid, postcode, address
 ## We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
 
 ### Schema for this Database
-`
-Table People {
- personid PK // auto-increment
- name CharField
- age IntegerField
- houseid ForeignKey [ref: > Houses.houseid]
-}
+```
+ Table People {
+  personid PK // auto-increment
+  name CharField
+  age IntegerField
+  houseid ForeignKey [ref: > Houses.houseid]
+ }
 
-Table Houses {
- houseid PK // auto-increment
- address CharField
- no_of_people_in_hh IntegerField
- ownerid ForeignKey [ref: > People.personid]
- neighbourhoodid ForeignKey [ref: > Addresses.neighbourhoodid]
-}
+ Table Houses {
+  houseid PK // auto-increment
+  address CharField
+  no_of_people_in_hh IntegerField
+  ownerid ForeignKey [ref: > People.personid]
+  neighbourhoodid ForeignKey [ref: > Addresses.neighbourhoodid]
+ }
 
-Table Addresses {
- neighbourhoodid PK // auto-increment
- postcode CharField
- address CharField [ref: > Houses.address]
-}
-`
+ Table Addresses {
+  neighbourhoodid PK // auto-increment
+  postcode CharField
+  address CharField [ref: > Houses.address]
+ }
+```
 
 ### Picture of Schema
 
