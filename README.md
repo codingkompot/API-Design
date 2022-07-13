@@ -64,8 +64,6 @@ http://localhost:3000/api/people/:id
 
 SELECT name, houseid FROM people WHERE personID = 4;
 
-GET
-
 http://localhost:3000/api/people/new
 
 This would be our URL for our POST requests.
