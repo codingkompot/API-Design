@@ -90,11 +90,13 @@ For GET requests, we would want something that converts our csv data into JSON d
 
 For POST requests, we would receive data in a JSON format and we would convert that data into a csv format for the purpose of storage in our SQL database.
 
+This is just an update.
+
 ```
 fetch(url, {
 Method: ‘POST’,
 Headers: {
-‘Content-Type’: ‘application/json’}
+‘Content-Type’: ‘application/json’,
 }
 })
 ```
