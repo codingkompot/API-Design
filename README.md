@@ -63,6 +63,7 @@ DELETE - delete a record
 http://localhost:3000/api/people/:id
 
 This is an example URL for our GET requests.
+
 ( SELECT name, houseid FROM people WHERE personID = 4; )
 
 http://localhost:3000/api/people/new
