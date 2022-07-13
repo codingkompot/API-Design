@@ -4,14 +4,17 @@
 
 ### People.csv -
 personId, name, age, houseid
+
 4, “Sally”, 47, 136
 
 ### Houses.csv -
 Houseid, address, ownerid, no_of_people_in_hh, neighbourhoodid
+
 136, “123 TreeHouse Lane”, 4, 3, 72
 
 ### Addresses.csv -
 Neighbourhoodid, postcode, address
+
 72, “SE11 7GH”, “123 Treehouse Lane”
 
 ## We would be storing CSV data and we would be using Sql for the purpose of using relational databases.
