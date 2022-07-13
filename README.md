@@ -51,8 +51,11 @@ Neighbourhoodid, postcode, address
 ## Consider the requests our API should be capable of handling
 
 GET - for reading data
+
 POST - for inserting new data
+
 PUT/PATCH - for updating pre-existing data
+
 DELETE - delete a record
 
 ## List the routes you will need with their HTTP verb and path
